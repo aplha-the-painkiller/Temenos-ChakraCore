@@ -4,7 +4,7 @@
 [![Licensed under the MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/Microsoft/ChakraCore/blob/master/LICENSE.txt)
 [![PR's Welcome](https://img.shields.io/badge/PRs%20-welcome-brightgreen.svg)](#contribute)
 
-ChakraCore is a JavaScript engine with a C API you can use to add support for JavaScript to any C or C compatible project. It can be compiled for x64 processors on Linux macOS and Windows. And x86 and ARM for Windows only. It is a future goal to support x86 and ARM processors on Linux and ARM on macOS. 
+ChakraCore is a JavaScript engine with a C API you can use to add support for JavaScript to any C or C compatible project. It can be compiled for x64 processors on Linux macOS and Windows. And x86 and ARM for Windows only. It is a future goal to support x86 and ARM processors on Linux and ARM on macOS.
 
 ## Future of ChakraCore
 
@@ -56,9 +56,10 @@ Once built, you have a few options for how you can use ChakraCore:
   * macOS/Linux: `buildFolder/config/ch` (e.g. `out/Release/ch`)
 * You can [embed ChakraCore](https://github.com/chakra-core/ChakraCore/wiki/Embedding-ChakraCore) in your applications - see [documentation](https://github.com/chakra-core/ChakraCore/wiki/Embedding-ChakraCore) and [samples](https://aka.ms/chakracoresamples).
 
-_A note about using ChakraCore_: ChakraCore is a JavaScript engine, it does not include the external APIs that are provided by a Web Browser or Node.js.  For example, DOM APIs like ```document.write()``` are additional APIs that are not provided by ChakraCore, when embedding ChakraCore in an application you will need to implement your own input and output APIs. For debugging, in `ch` you can use ```print()``` to put text to the terminal.
+*A note about using ChakraCore*: ChakraCore is a JavaScript engine, it does not include the external APIs that are provided by a Web Browser or Node.js.  For example, DOM APIs like ```document.write()``` are additional APIs that are not provided by ChakraCore, when embedding ChakraCore in an application you will need to implement your own input and output APIs. For debugging, in `ch` you can use ```print()``` to put text to the terminal.
 
 Alternatively, if you are using the [vcpkg](https://github.com/Microsoft/vcpkg/) dependency manager you can download and install ChakraCore with CMake integration in a single command:
+
 * vcpkg install chakracore
 
 ## Contribute
